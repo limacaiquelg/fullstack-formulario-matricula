@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --font-family: 'Poppins', sans-serif;
   --text: 400 1rem/1.5 var(--font-family);
@@ -15,4 +21,8 @@
   --text-secondary: #57534E;
   --text-tertiary: #8F8881;
   --text-highlight: #E43A12;
+}
+
+body {
+  overflow: hidden;
 }
