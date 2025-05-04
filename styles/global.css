@@ -50,3 +50,9 @@ img {
 .flex-2 {
   flex: 2;
 }
+
+@media (width < 48rem) {
+  body {
+    overflow: auto;
+  }
+}

@@ -48,3 +48,39 @@ aside {
     }
   }
 }
+
+@media (width < 48rem) {
+  #app {
+    grid-template-columns: 100%;
+    height: auto;
+    overflow: auto;
+
+    & main {
+      grid-row: 2;
+      padding: 1.5rem;
+    }
+
+    & aside {
+      grid-row: 1;
+      padding: 1.5rem;
+
+      & .aside-container {
+        margin-inline: auto;
+
+        & header img {
+          display: block;
+          margin-inline: auto;
+        }
+
+        & header h2, & header p {
+          display: none;
+        }
+
+        & > img {
+          display: block;
+          margin-top: .75rem;
+        }
+      }
+    }
+  }
+}
